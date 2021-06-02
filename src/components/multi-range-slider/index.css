@@ -1,0 +1,73 @@
+.full-width,
+.range-input{
+    width : 100%;
+}
+.range-track{
+    width: 100%;
+    display: flex;
+}
+.range-track{
+
+}
+.left-range,
+.mid-range,
+.right-range{
+    height:10px;
+}
+.left-range{
+    width: 30%;
+}
+.mid-range{
+    width: 30%;
+}
+.right-range{
+    width: 40%;
+}
+.start-range,
+.end-range{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    outline: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    height: 0px;
+}
+.start-range::-webkit-slider-thumb, 
+.end-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #f1f5f7;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 1px #ced4da;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin-top: 50px;
+    pointer-events: all;
+    position: relative;
+}
+.end-range{
+    z-index: 4;
+}
+.start-range{
+    z-index: 3;
+}
+.range-slider-datalist{
+    display: flex;
+    justify-content: space-between;
+    color:red;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-left: '-1%';
+    font-size: medium;
+}
+.active-range{
+    background-color: blue;
+}
+.inactive-range{
+    background-color: #d7d7d7;
+}
+.datalist-option{
+    padding:0px 15px 0px 0px;
+}
